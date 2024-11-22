@@ -147,25 +147,23 @@ def modify(id, name):
 if __name__ == '__main__':
     print("Bienvenidos a otra clase con Python")
     create_schema()   # create and reset database (DB)
-    fill(1, "Jesús González", 40, 1, "Madre")
-    fill(2, "Rosa Chavez", 28, 1, "Madre")
-    fill(3, "Carolina Figueroa", 24, 2, "Padre")
-    fill(4, "Francisco Gallo", 23, 2, "Madre")
-    fill(5, "Gastón Villarreal", 35, 3, "Padre")
+    fill(1, "Andrea Diaz", 25, 2, "Esteban Diaz - Padre")
+    fill(2, "Sebastián Correa", 18, 3, "Ivana Ruiz - Madre")
+    fill(3, "Luciana Perez", 21, 1, "Dario Perez - Padre")
+    fill(4, "Lucas Vilte", 19, 1, "Maria Lopez - Madre")
+    fill(5, "Gabriela Nuñez", 18, 1, "Ricardo Nuñez - Padre")
     fetch()
 
     grade =3
     search_by_grade(grade)
 
-    new_student = ['You', 16]
+    new_student = ['Mayra Cruz', 16]
     insert(new_student)
 
     fetch()
 
-    name = '¿Instituto Zuviría?'
-    id = 2
+    name = 'Angela Perez'
+    id = 3
     modify(id, name)
     
     fetch()
-
-
